@@ -6,12 +6,20 @@
 
     <groupId>com.taller</groupId>
     <artifactId>taller-devops-github-actions</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/victor1997h/taller-devops-github-actions</url>
+        </repository>
+    </distributionManagement>
 
 </project>
